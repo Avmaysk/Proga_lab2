@@ -4,4 +4,5 @@
     <Platform Name="x86" />
   </Configurations>
   <Project Path="lab2-2/lab2-2.vcxproj" />
+  <Project Path="lab2-3/lab2-3.vcxproj" />
 </Solution>
