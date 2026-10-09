@@ -1,4 +1,4 @@
-﻿// Задание 3. Ввести класс E — Economy, P — Premium, B — Business и массу багажа. Через switch задать бесплатную норму 20, 25 и 32 кг. Каждый кг перевеса стоит 5. Багаж свыше 50 кг не принимается. Для неизвестного класса вывести ошибку. Вывести норму и доплату.
+﻿ // Задание 3. Ввести класс E — Economy, P — Premium, B — Business и массу багажа. Через switch задать бесплатную норму 20, 25 и 32 кг. Каждый кг перевеса стоит 5. Багаж свыше 50 кг не принимается. Для неизвестного класса вывести ошибку. Вывести норму и доплату.
 
 //
 
@@ -9,19 +9,19 @@ using namespace std;
 int main() {
     setlocale(LC_ALL, "Russian");
 
-    char klass;         
+    char klass;
     double mass;
-    double norm;     
-    double extra;   
+    double norm;
+    double extra;
 
-  
+
     cout << "Введите класс (E - Economy, P - Premium, B - Business): ";
     cin >> klass;
 
     cout << "Введите массу багажа: ";
     cin >> mass;
 
-    
+
     switch (klass) {
     case 'E':
     case 'e':
@@ -40,11 +40,11 @@ int main() {
         return 0;
     }
 
-   
+
     cout << "\n=== Решение ===" << endl;
     cout << "Бесплатная норма: " << norm << " кг" << endl;
 
-   
+
 
     if (mass > 50) {
         cout << "Багаж не принимается (вес больше 50 кг)." << endl;
